@@ -10,7 +10,6 @@ struct node
 
 struct node *head = NULL;
 struct node *current = NULL;
-struct node *last = NULL;
 
 void insert(int data)
 {
@@ -27,20 +26,21 @@ void insert(int data)
     while (current->later != NULL)
         current = current->later;
     current->later = link;
-    last = link;
     link->pre = current;
 }
 
 void display()
 {
     struct node *ptr = head;
+    printf("n[head] <=>");
     while (ptr->later != NULL)
     {
-        printf("%d\n", ptr->data);
+        printf(" %d <=>", ptr->data);
         ptr = ptr->later;
     }
 
-    printf("%d\n", ptr->data);
+    printf(" %d <=>", ptr->data);
+    printf(" [head]n");
 }
 
 int main()
