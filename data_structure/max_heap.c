@@ -14,8 +14,9 @@ int main()
     insert(arr, 2);
     insert(arr, 3);
     insert(arr, 4);
+    insert(arr, 5);
     printArr(arr, size);
-    deleteRoot(arr, 122);
+    deleteRoot(arr, 1);
     printArr(arr, size);
     return 0;
 }
