@@ -16,14 +16,13 @@ int main()
     insert(arr, 4);
     insert(arr, 5);
     printArr(arr, size);
-    deleteRoot(arr, 1);
+    deleteRoot(arr, 5);
     printArr(arr, size);
     return 0;
 }
 
 void swap(int *a, int *b)
 {
-    printf("a %d,b %d \n", *a, *b);
     int temp = *b;
     *b = *a;
     *a = temp;
